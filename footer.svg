@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 160" width="100%" height="100%">
+  <defs>
+    <!-- Deep Obsidian Darkness Background Gradient -->
+    <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020409" />
+      <stop offset="50%" stop-color="#060c1c" />
+      <stop offset="100%" stop-color="#020409" />
+    </linearGradient>
+
+    <!-- Animated Dark Electric Cyber Text Gradient (No Rose/Pink) -->
+    <linearGradient id="footerTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe">
+        <animate attributeName="stop-color" values="#00f2fe; #38bdf8; #818cf8; #a78bfa; #00f2fe" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#38bdf8">
+        <animate attributeName="stop-color" values="#38bdf8; #818cf8; #a78bfa; #00f2fe; #38bdf8" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#818cf8">
+        <animate attributeName="stop-color" values="#818cf8; #a78bfa; #00f2fe; #38bdf8; #818cf8" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Dark Electric Border Gradient -->
+    <linearGradient id="footerBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Subtle Deep Cyber Grid Pattern -->
+    <pattern id="footerGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0f1f38" stroke-width="0.75" opacity="0.4" />
+      <circle cx="40" cy="40" r="1.1" fill="#00f2fe" opacity="0.18" />
+    </pattern>
+
+    <!-- Clip Path -->
+    <clipPath id="footerClip">
+      <rect width="1200" height="160" rx="16" />
+    </clipPath>
+
+    <!-- Glow Filter -->
+    <filter id="glowF" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes scanlineF {
+        0% { transform: translateY(-10px); opacity: 0; }
+        30% { opacity: 0.45; }
+        70% { opacity: 0.45; }
+        100% { transform: translateY(170px); opacity: 0; }
+      }
+      @keyframes streamLineF {
+        0% { stroke-dashoffset: 120; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .font-mono {
+        font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+      }
+      .font-sans {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      }
+      .scan-footer {
+        animation: scanlineF 4.5s ease-in-out infinite;
+      }
+      .stream-footer {
+        stroke-dasharray: 14, 10;
+        animation: streamLineF 3s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Inner Clipped Content -->
+  <g clip-path="url(#footerClip)">
+    <rect width="1200" height="160" fill="url(#footerBg)" />
+    <rect width="1200" height="160" fill="url(#footerGrid)" />
+
+    <!-- Ambient Glow Blobs (Cyan & Violet — Zero Rose) -->
+    <circle cx="200" cy="80" r="100" fill="#4f46e5" opacity="0.1" filter="url(#glowF)" />
+    <circle cx="1000" cy="80" r="100" fill="#00f2fe" opacity="0.08" filter="url(#glowF)" />
+
+    <!-- Scanline -->
+    <g class="scan-footer">
+      <line x1="0" y1="0" x2="1200" y2="0" stroke="url(#footerTextGrad)" stroke-width="1.5" opacity="0.5" />
+    </g>
+
+    <!-- Left Circuit Accent -->
+    <g opacity="0.65">
+      <path d="M 30 80 L 120 80 L 160 50 L 250 50" fill="none" stroke="#00f2fe" stroke-width="1.3" class="stream-footer" />
+      <circle cx="30" cy="80" r="3.5" fill="#00f2fe" />
+      <circle cx="160" cy="50" r="3" fill="#00f2fe" />
+      <circle cx="250" cy="50" r="4" fill="#00f2fe" />
+    </g>
+
+    <!-- Right Circuit Accent -->
+    <g opacity="0.65">
+      <path d="M 1170 80 L 1080 80 L 1040 50 L 950 50" fill="none" stroke="#818cf8" stroke-width="1.3" class="stream-footer" />
+      <circle cx="1170" cy="80" r="3.5" fill="#818cf8" />
+      <circle cx="1040" cy="50" r="3" fill="#818cf8" />
+      <circle cx="950" cy="50" r="4" fill="#818cf8" />
+    </g>
+
+    <!-- HUD Corner Accents -->
+    <g stroke="#00f2fe" stroke-width="1.8" fill="none" opacity="0.7">
+      <path d="M 16 30 L 16 16 L 30 16" />
+      <path d="M 1184 30 L 1184 16 L 1170 16" />
+      <path d="M 16 130 L 16 144 L 30 144" />
+      <path d="M 1184 130 L 1184 144 L 1170 144" />
+    </g>
+
+    <!-- Center Content -->
+    <g transform="translate(600, 0)">
+
+      <!-- Status Pill -->
+      <g transform="translate(0, 36)">
+        <rect x="-135" y="-12" width="270" height="24" rx="12" fill="#080e1e" fill-opacity="0.9" stroke="#1e293b" stroke-width="1" />
+        <circle cx="-108" cy="0" r="5" fill="#10b981" opacity="0.35">
+          <animate attributeName="opacity" values="0.2;0.7;0.2" dur="2s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="-108" cy="0" r="3" fill="#10b981" />
+        <text x="-93" y="3.5" fill="#94a3b8" class="font-mono" font-size="10" font-weight="600" letter-spacing="1.5">OPEN FOR COLLABORATION</text>
+        <text x="100" y="4" fill="#00f2fe" class="font-mono" font-size="11" font-weight="bold">&gt;_</text>
+      </g>
+
+      <!-- Main Closing Statement -->
+      <g transform="translate(0, 84)">
+        <text x="0" y="0" text-anchor="middle" class="font-sans" font-size="22" font-weight="800" letter-spacing="3" fill="url(#footerTextGrad)">
+          THANKS FOR VISITING • LET'S BUILD SOMETHING EXTRAORDINARY
+        </text>
+      </g>
+
+      <!-- Bottom Philosophy Mantra -->
+      <g transform="translate(0, 122)">
+        <text x="0" y="0" text-anchor="middle" class="font-mono" font-size="11.5" fill="#475569" letter-spacing="2.5">
+          &lt; THINK • BUILD • DEBUG • LEARN • IMPROVE /&gt;
+        </text>
+      </g>
+
+    </g>
+  </g>
+
+  <!-- Border -->
+  <rect x="2" y="2" width="1196" height="156" rx="15" fill="none" stroke="url(#footerBorderGrad)" stroke-width="1.5" opacity="0.75" />
+</svg>
