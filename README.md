@@ -13,6 +13,7 @@
   <a href="#-who-i-am"><b>🧑‍💻 WHO I AM</b></a> &nbsp;•&nbsp; 
   <a href="#%EF%B8%8F-skills--technologies"><b>🛠️ SKILLS & TOOLS</b></a> &nbsp;•&nbsp; 
   <a href="#-featured-projects"><b>🚀 PROJECTS</b></a> &nbsp;•&nbsp; 
+  <a href="#-achievements--certifications"><b>🏆 ACHIEVEMENTS</b></a> &nbsp;•&nbsp; 
   <a href="#-github-activity"><b>📊 ACTIVITY</b></a> &nbsp;•&nbsp; 
   <a href="#-lets-build-something"><b>📬 CONTACT</b></a>
 </p>
@@ -117,6 +118,7 @@ I've also built **IoT-integrated systems** — connecting Arduino sensors to sof
 - 🔌 **REST API Architecture**: Developed and tested Flask REST APIs using Postman with structured API documentation.
 - ☁️ **Cloud Deployment**: Deployed on Render, troubleshooting runtime issues and integrating live weather data.
 <br/>
+
 ### 👥 Smart PQ Counter — People Counting & Occupancy Alert System
 `Python` • `Flask` • `MySQL` • `Arduino` • `PySerial` • `smtplib` • `Team Project`
 
@@ -124,20 +126,62 @@ I've also built **IoT-integrated systems** — connecting Arduino sensors to sof
 - 🗄️ **Database Persistence**: Debugged MySQL data logging and verified accuracy of persistent occupancy records.
 - 🚨 **Automated Alerting**: Implemented automated email alerts and performed basic troubleshooting for occupancy threshold events.
 
-<br/>
+## 🏆 Achievements & Certifications
 
-## 📊 GitHub Activity
+<table width="100%">
+<tr>
+<td width="33.3%" align="center" valign="top">
 
-<div align="center">
+### 🏆
+**Smart India Hackathon**  
+`National Hackathon`  
+Team idea selected at college-level selection round.
 
-<img src="https://github-readme-stats.vercel.app/api?username=Rajasurya7775&show_icons=true&theme=gruvbox&hide_border=true&count_private=true" width="48%"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rajasurya7775&layout=compact&theme=gruvbox&hide_border=true" width="36%"/>
+</td>
+<td width="33.3%" align="center" valign="top">
 
-<br/>
+### 🎤
+**ICIRIST Conference**  
+`2025 & 2026`  
+Conference participation and research paper presentation.
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Rajasurya7775&theme=react-dark&hide_border=true" width="97%"/>
+</td>
+<td width="33.3%" align="center" valign="top">
 
-</div>
+### 🤖
+**AI Finishing School**  
+`Infosys & ICT Academy`  
+Certificate Course on Artificial Intelligence — **Grade A**
+
+</td>
+</tr>
+<tr>
+<td width="33.3%" align="center" valign="top">
+
+### ☁️
+**AWS Cloud Foundations**  
+`Amazon Web Services`  
+Certification in core cloud architecture & fundamentals.
+
+</td>
+<td width="33.3%" align="center" valign="top">
+
+### 🐍
+**100 Days of Code**  
+`Udemy • Python Pro`  
+Hands-on Python engineering and backend bootcamp.
+
+</td>
+<td width="33.3%" align="center" valign="top">
+
+### 🗄️
+**Databases and SQL**  
+`IBM — Coursera`  
+Relational database management, querying & data manipulation.
+
+</td>
+</tr>
+</table>
 
 <br/>
 
